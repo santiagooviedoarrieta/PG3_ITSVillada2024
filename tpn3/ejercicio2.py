@@ -4,4 +4,4 @@ try:
     division=n1/n2
     print("La division entre sus 2 numeros es: ", division)
 except ZeroDivisionError:
-    print("Error, Usted dividio entre 0")
+    print("Error no se puede dividir por 0")

@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="https://static.vecteezy.com/system/resources/previews/029/345/984/original/api-icon-data-analytics-monitoring-setting-gear-database-icons-free-png.png" type="image/png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0
+.0/css/bootstrap.min.css">
+    <title>My Website Django</title>
+    <style>
+        .card.col-sm-6 {
+            height: 20%;
+            transition: 0.3s;
+            box-shadow: 1px 2px 11px 4px rgba(0, 0, 0, 0.5);
+}
+        .card.col-sm-6:hover{
+            transform:translateY(-10px);
+        }
+        button{ 
+            font-weight:500;
+            border:none;
+            background-color:#ffba24;
+            border-radius:5px;
+            padding:10px;   
+            width: 90px;    
+
+        }
+        h2 {
+    font-size: 20px;
+        }
+        li {
+            justify-content: space-between;
+            flex-direction: column;
+            display: flex;  
+            width: 30%;
+            font-size: 20px;
+            border-radius: 10px;
+            height: 130px;
+            padding: 10px;
+            margin: 10px;
+            border: 1px solid #000;
+            transition: .3s;
+            box-shadow: 4px 3px 4px 0px rgb(32 182 138 / 50%);
+
+        }
+        li:hover{
+            background-color: #d1d1d1;
+            transform:translateY(-10px);
+            box-shadow: 4px 10px 4px 0px rgba(223, 202, 8, 0.5);
+            scale: 1.2;
+            z-index: 9999;
+        }
+
+    ul{
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+        
+    </style>
+    <!--<script>
+        function aboutopen() {
+            var card1 = document.getElementById("about1");
+            card1.style.display ="flex";
+        }
+        function close1() {
+            var card1 = document.getElementById("about1");
+            card1.style.display ="none";
+        }   
+    </script>-->
+</head>
+<body>
+    <div class="container mb-5 mt-5">
+        <h1 style="width: 100%;height: 100%;text-align: center;">First Website with Django</h1>
+        <h5>Hola Mundo...</h5> 
+        {% if provincias %}
+        <ul>
+            {% for provincia in provincias %}
+                <li>
+                    <h2>{{ provincia.nombre }}</h2>
+                    <p>ID: {{ provincia.id }}</p>
+                </li>
+            {% endfor %}
+        </ul>
+    {% else %}
+        <p>No se encontraron provincias.</p>
+    {% endif %}
+
+        
+
+
+
+
+
+
+
+
+
+
+
+        <!--<div class="container" style="display:flex;flex-direction:column;height:auto;">
+            <div style="display:flex;padding:10px;">
+                <div class="card col-sm-6"style="margin:10px;">
+                    <h2>Hola Mundo 1</h2>
+                    <p>Card Description<p>  
+                    <button onclick="aboutopen()" id="btn1">About</button>
+                    <div id="about1"class="about1" style="display:none;flex-direction:column;height:190px;width:100%;">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto deserunt nostrum dolorem incidunt sunt distinctio quam quia nemo. Fugit cum eveniet ipsam omnis sapiente facere, aliquam reiciendis officiis eaque provident!</p>
+                        <button class="btn-danger" onclick="close1()">Cerrar</BUtton>
+                    </div>
+                </div>
+                <div class="card col-sm-6"style="margin:10px;"> 
+                    <h2>Hola Mundo 2</h2>
+                    <p>Card Description<p>
+                    <button>About</button>
+                </div>   
+            </div>
+            <div style="display:flex;padding:10px;">
+                <div class="card col-sm-6"style="margin:10px;">
+                    <h2>Hola Mundo 3</h2>
+                    <p>Card Description<p>
+                    <button>About</button>
+                </div>
+                <div class="card col-sm-6"style="margin:10px;">
+                    <h2>Hola Mundo 4</h2>
+                    <p>Card Description<p>
+                    <button>About</button>
+                </div>   
+            </div>
+            <div style="display:flex;padding:10px;">
+                <div class="card col-sm-6"style="margin:10px;">
+                    <h2>Hola Mundo 5</h2>
+                    <p>Card Description<p>
+                    <button>About</button>
+                </div>
+                <div class="card col-sm-6"style="margin:10px;">
+                    <h2>Hola Mundo 6</h2>
+                    <p>Card Description<p>
+                    <button>About</button>
+                </div>   
+            </div>-->
+        </div>
+        
+        
+    </div>
+</body>
+</html>
